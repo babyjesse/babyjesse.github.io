@@ -238,18 +238,26 @@ body {
         border-right: none;
         border-bottom: 1px solid #e0e0e0;
         padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
     }
     
     .project-name {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 32px;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 24px;
+        flex: 0 0 auto;
     }
     
     .nav-tabs {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 20px;
+        flex: 0 0 auto;
+        margin: 0;
     }
     
     .nav-tabs li {
@@ -263,7 +271,7 @@ body {
     }
     
     .logo {
-        max-width: 200px;
+        max-width: 350px;
     }
 }
 
