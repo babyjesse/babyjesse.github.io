@@ -70,8 +70,8 @@ function copyContract() {
 
 // Fetch and display rewards data
 async function fetchRewardsData() {
-    const contractAddress = '0xC989877eed7b424672AEF6AD92cD3119fd89C792';
-    const baseRpcUrl = 'https://base.llamarpc.com';
+    const contractAddress = '0x5167dfbaed3ddd6ef9bc9386e03f3f5634d253b8';
+    const baseRpcUrl = 'https://mainnet-preconf.base.org';
     
     try {
         // Create provider for Base network
