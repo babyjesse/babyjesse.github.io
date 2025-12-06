@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Jesse</title>
+    <meta name="description" content="Baby Jesse - The baby version of Jesse project. Features a 4% tax and rewards holders with Jesse tokens from the original project.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://babyjesse.xyz/">
+    <meta property="og:title" content="Baby Jesse - Rewards for Holders">
+    <meta property="og:description" content="Baby Jesse is the baby version of the original Jesse project. This version features a 4% tax and rewards holders with Jesse tokens from the original project.">
+    <meta property="og:image" content="https://babyjesse.xyz/media/logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://babyjesse.xyz/">
+    <meta property="twitter:title" content="Baby Jesse - Rewards for Holders">
+    <meta property="twitter:description" content="Baby Jesse is the baby version of the original Jesse project. This version features a 4% tax and rewards holders with Jesse tokens from the original project.">
+    <meta property="twitter:image" content="https://babyjesse.xyz/media/logo.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="media/icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="project-name">Baby Jesse</div>
+            <ul class="nav-tabs">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#photos" class="nav-link">Rewards</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <section id="about" class="section active">
+                <div class="logo-container">
+                    <img src="media/logo.jpg" alt="Baby Jesse Logo" class="logo">
+                </div>
+                <div class="info-text">
+                    <p>Baby Jesse is the baby version of the original Jesse project. This version features a 4% tax and rewards holders with Jesse tokens from the original project.</p>
+                    <p>Follow us on <a href="https://x.com/BabyJesseReward" target="_blank" class="social-link">Twitter</a>, join our <a href="https://t.me/Babyjessetg" target="_blank" class="social-link">Telegram</a>, or visit our website at <a href="https://babyjesse.xyz" target="_blank" class="social-link">babyjesse.xyz</a>.</p>
+                </div>
+                <div class="contract-section">
+                    <div class="contract-label">Contract Address:</div>
+                    <div class="contract-address-container">
+                        <span class="contract-address" id="contractAddress">0x29961753cEe8F1aEFCc8Faf5B6EbA5903E146763</span>
+                        <button class="copy-button" id="copyButton" onclick="copyContract()">Copy</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="photos" class="section">
+                <div class="photos-content">
+                    <h2>Rewards For Us</h2>
+                    <div class="rewards-table-container">
+                        <table class="rewards-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rewardsTableBody">
+                                <tr>
+                                    <td>Total Distributed (ETH)</td>
+                                    <td class="loading">Loading...</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Distributed (USD)</td>
+                                    <td class="loading">Loading...</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Distributed (Jesse Tokens)</td>
+                                    <td class="loading">Loading...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
